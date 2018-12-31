@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+ {% for blogpost in blog: %}
+<div class="postbreak">
+    <h2>
+        <a href="{{ url_for('index', id=blogpost.id) }}">
+            {{ blogpost.blogtitle }}
+            </a>
+    </h2>
+    <img src="{{ blogpost.imagepath }}" alt="{{ blogpost.blogtitle }}">
+    <p>
+        {{ blogpost.body }}
+    </p>
+</div>
+{% endfor %}
+
+
+{% endblock %}
