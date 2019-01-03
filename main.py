@@ -4,7 +4,7 @@ import cgi
 
 app = Flask(__name__)
 app.config['DEBUG'] = True      # displays runtime errors in the browser, too
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://build-a-blog:password@localhost:8888/build-a-blog'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://build-a-blog-2:password@localhost:8889/build-a-blog-2'
 #'mysql+pymysql://build-a-blog:blogger@localhost:8888/build-a-blog'
 app.config['SQLALCHEMY_ECHO'] = True
 
