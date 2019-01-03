@@ -9,6 +9,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://build-a-blog-2:password
 app.config['SQLALCHEMY_ECHO'] = True
 
 db = SQLAlchemy(app)
+#comment for no reason
 
 class Blog(db.Model):
     id = db.Column(db.Integer, primary_key = True)
